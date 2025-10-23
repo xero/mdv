@@ -4,7 +4,13 @@
 	box-sizing: border-box;
 }
 :root {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		sans-serif;
 	line-height: 1.6;
 	font-weight: 400;
 	color-scheme: light dark;
@@ -20,7 +26,7 @@
 ::-webkit-scrollbar-button {
 	background: #e1e2e7 !important;
 	height: 0;
-	width:0;
+	width: 0;
 }
 ::-webkit-scrollbar-corner {
 	background: #e1e2e7 !important;
@@ -84,7 +90,7 @@ button {
 	overflow: auto;
 }
 .cm-content {
-	padding:0 !important;
+	padding: 0 !important;
 }
 .cm-editor {
 	height: 100%;
@@ -202,7 +208,7 @@ button {
 		background: #171717 !important;
 	}
 	::-webkit-scrollbar-thumb:hover {
-		background: #0366d6 !important
+		background: #0366d6 !important;
 	}
 	::-webkit-scrollbar-button {
 		background: #171717 !important;

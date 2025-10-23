@@ -20,19 +20,19 @@ const debounce = (func, delay) => {
 		clearTimeout(timeoutId);
 		timeoutId = setTimeout(() => func.apply(this, args), delay);
 	};
-}
+};
 
-const saveToLocalStorage = (content) => {
+const saveToLocalStorage = content => {
 	localStorage.setItem(STORAGE_KEY, content);
-}
+};
 
 const debouncedSave = debounce(saveToLocalStorage, 300);
 
-const updatePreview = (content) => {
+const updatePreview = content => {
 	const previewElement = D.querySelector('#preview');
 	const html = converter.makeHtml(content);
 	previewElement.innerHTML = html;
-}
+};
 
 let prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const isDarkModeOverride = localStorage.getItem('darkModeOverride');
@@ -70,15 +70,15 @@ let isDragging = false;
 let startX = 0;
 let startEditorWidth = 0;
 
-const startDrag = (clientX) => {
+const startDrag = clientX => {
 	isDragging = true;
 	startX = clientX;
 	startEditorWidth = editorPanel.offsetWidth;
 	D.body.style.userSelect = 'none';
 	D.body.style.cursor = 'col-resize';
-}
+};
 
-const doDrag = (clientX) => {
+const doDrag = clientX => {
 	if (!isDragging) {
 		return;
 	}
@@ -92,7 +92,7 @@ const doDrag = (clientX) => {
 		const percentage = (newEditorWidth / contentWidth) * 100;
 		editorPanel.style.flex = `0 0 ${percentage}%`;
 	}
-}
+};
 
 const stopDrag = () => {
 	if (!isDragging) {
@@ -101,7 +101,7 @@ const stopDrag = () => {
 	isDragging = false;
 	D.body.style.userSelect = '';
 	D.body.style.cursor = '';
-}
+};
 
 dragbar.addEventListener('mousedown', e => {
 	e.preventDefault();
@@ -193,17 +193,16 @@ const updateFullscreenButton = () => {
 	fullscreenButton.textContent = isFullscreen
 		? 'Exit Full Screen'
 		: 'Full Screen';
-}
+};
 
 D.addEventListener('fullscreenchange', updateFullscreenButton);
 D.addEventListener('webkitfullscreenchange', updateFullscreenButton);
 D.addEventListener('mozfullscreenchange', updateFullscreenButton);
 D.addEventListener('MSFullscreenChange', updateFullscreenButton);
 
-
 const darkModeButton = D.querySelector('#darkmode');
 
-const updateDarkMode = (isDark) => {
+const updateDarkMode = isDark => {
 	prefersDark = isDark;
 	localStorage.setItem('darkModeOverride', isDark.toString());
 	D.querySelector('html').classList.toggle('dark');
@@ -213,7 +212,7 @@ const updateDarkMode = (isDark) => {
 			isDark ? tokyoNightStorm : tokyoNightDay,
 		),
 	});
-}
+};
 darkModeButton.addEventListener('click', () => {
 	updateDarkMode(!prefersDark);
 });

@@ -1,0 +1,27 @@
+name: test suite
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - 'LICENSE'
+      - '.gitattributes'
+      - '.gitignore'
+      - '.prettierignore'
+  pull_request:
+    branches: ["*"]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  packages: read
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+  build:
+    uses: ./.github/workflows/build.yml
+  deploy:
+    needs: [lint, build]
+    if: github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/deploy.yml
