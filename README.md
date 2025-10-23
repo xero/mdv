@@ -5,6 +5,8 @@
 ![dark mode preview](https://raw.githubusercontent.com/xero/mdv/preview/mdv-dark.png)
 ![light mode preview](https://raw.githubusercontent.com/xero/mdv/preview/mdv-light.png)
 
+## Demo: [https://xero.github.io/mdv/](https://xero.github.io/mdv/)
+
 ## Features
 
 - **Split-screen layout**: Editor on the left (50%), preview on the right (50%)
