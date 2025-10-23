@@ -9,10 +9,11 @@
 
 ## Features
 
-- **Split-screen layout**: Editor on the left (50%), preview on the right (50%)
+- **Split-screen layout**: Editor on the left, preview on the right
+- **Resizable**: Drag the center divider to resize the panels
 - **Live preview**: See your markdown rendered in real-time as you type
 - **Syntax highlighting**: CodeMirror with markdown language support
-- **Dark mode support**: Automatically adapts to system color scheme
+- **Dark mode support**: Adapts to system color preferences
 - **Github flavored markdown**: Headers, lists, code blocks, tables, links, images, and more
 - **Full Screen**: Zen mode for markdown editing
 - **Local storage**: Markdown contents automatically sync to your browser storage
