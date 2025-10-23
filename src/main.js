@@ -59,7 +59,12 @@ const editor = new EditorView({
 	extensions: extensions,
 	parent: D.querySelector('#editor'),
 });
-
+if (editor.contentDOM) {
+	editor.contentDOM.setAttribute('spellcheck', 'true');
+	editor.contentDOM.setAttribute('autocorrect', 'on');
+	editor.contentDOM.setAttribute('autocapitalize', 'sentences');
+	editor.contentDOM.setAttribute('data-gramm', 'on');
+}
 updatePreview(initialContent);
 
 const dragbar = D.querySelector('#dragbar');
@@ -206,7 +211,7 @@ const updateDarkMode = isDark => {
 	prefersDark = isDark;
 	localStorage.setItem('darkModeOverride', isDark.toString());
 	D.querySelector('html').classList.toggle('dark');
-	darkModeButton.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+	darkModeButton.textContent = isDark ? 'light mode' : 'dark mode';
 	editor.dispatch({
 		effects: themeCompartment.reconfigure(
 			isDark ? tokyoNightStorm : tokyoNightDay,
