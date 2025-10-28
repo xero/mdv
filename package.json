@@ -16,7 +16,7 @@
     "fix": "prettier --write src/*.html src/*.css src/*.js && eslint --fix src/*.html src/*.js"
   },
   "dependencies": {
-    "@codemirror/lang-markdown": "^6.4.0",
+    "@codemirror/lang-markdown": "^6.5.0",
     "@codemirror/theme-one-dark": "^6.1.3",
     "@fsegurai/codemirror-theme-tokyo-night-day": "^6.2.2",
     "@fsegurai/codemirror-theme-tokyo-night-storm": "^6.2.2",
