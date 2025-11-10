@@ -8,7 +8,7 @@
         "@codemirror/theme-one-dark": "^6.1.3",
         "@fsegurai/codemirror-theme-tokyo-night-day": "^6.2.2",
         "@fsegurai/codemirror-theme-tokyo-night-storm": "^6.2.2",
-        "@html-eslint/eslint-plugin": "^0.47.0",
+        "@html-eslint/eslint-plugin": "^0.48.0",
         "@html-eslint/parser": "^0.47.0",
         "@stylistic/eslint-plugin": "^5.5.0",
         "bun": "^1.3.1",
@@ -123,15 +123,15 @@
 
     "@fsegurai/codemirror-theme-tokyo-night-storm": ["@fsegurai/codemirror-theme-tokyo-night-storm@6.2.2", "", { "peerDependencies": { "@codemirror/language": "^6.0.0", "@codemirror/state": "^6.0.0", "@codemirror/view": "^6.0.0", "@lezer/highlight": "^1.0.0" } }, "sha512-3lvaim/06xYYbpNhGccIs54/0QjQPKLMXh+ggSD6s2I2ux5Y/HLnIa/atkehK4pu/fdid3+c7SCpu1XlF+SLDA=="],
 
-    "@html-eslint/eslint-plugin": ["@html-eslint/eslint-plugin@0.47.0", "", { "dependencies": { "@eslint/plugin-kit": "^0.3.1", "@html-eslint/parser": "^0.47.0", "@html-eslint/template-parser": "^0.47.0", "@html-eslint/template-syntax-parser": "^0.47.0", "@html-eslint/types": "^0.47.0" }, "peerDependencies": { "eslint": "^8.0.0 || ^9.0.0" } }, "sha512-eZWk+qVDwYBs7HWDEo4WyprseqbUGyyCw/+sk4/C+0gQ8e4PsaeMPeKyttUwtrqkLBBh2YoGHAwrQUbwG7m2Fw=="],
+    "@html-eslint/eslint-plugin": ["@html-eslint/eslint-plugin@0.48.0", "", { "dependencies": { "@eslint/plugin-kit": "^0.3.1", "@html-eslint/parser": "^0.48.0", "@html-eslint/template-parser": "^0.48.0", "@html-eslint/template-syntax-parser": "^0.48.0", "@html-eslint/types": "^0.48.0" }, "peerDependencies": { "eslint": "^8.0.0 || ^9.0.0" } }, "sha512-gZvPZu8RwHGCkLD3FItf3vpZsvcCZSxTNwshsWvraixSqOir/y2319v18tNOfRsCs3JCExhLXziUhkvoF0llhA=="],
 
     "@html-eslint/parser": ["@html-eslint/parser@0.47.0", "", { "dependencies": { "@html-eslint/template-syntax-parser": "^0.47.0", "@html-eslint/types": "^0.47.0", "es-html-parser": "0.3.0" } }, "sha512-ZFlO671ia/grNUAHOf05xcfRp7wdBIV6aNe5n83YmhxzLx/tmg2Idc5k6iyFnebOe56NhcfzqV1VASnxcS/7rA=="],
 
-    "@html-eslint/template-parser": ["@html-eslint/template-parser@0.47.0", "", { "dependencies": { "@html-eslint/types": "^0.47.0", "es-html-parser": "0.3.0" } }, "sha512-QEG8xEP6eZWyy8QHlbHt85+JjDOxXgrixFV6aCa5An4WqDWtxe2eItpXFeC4LQFZHEaoWgbYoFn7wES3jneMBw=="],
+    "@html-eslint/template-parser": ["@html-eslint/template-parser@0.48.0", "", { "dependencies": { "@html-eslint/types": "^0.48.0", "es-html-parser": "0.3.1" } }, "sha512-E5L8K7nVwYtNTZtuSF0uVEstYWzd056PsUQQgDPa00VhGVPkd4gOYQbRboTfeO/bSphvgf7FcTLl97wHlLZARQ=="],
 
-    "@html-eslint/template-syntax-parser": ["@html-eslint/template-syntax-parser@0.47.0", "", { "dependencies": { "@html-eslint/types": "^0.47.0" } }, "sha512-U7+baZDb3PmxAL8cyz3K/iTdCEabwEIcpuf6VbpIa9rie5bLwoNUX2h2bulLmjn9tE28Pul6t4QuM4Rv2Y5vDg=="],
+    "@html-eslint/template-syntax-parser": ["@html-eslint/template-syntax-parser@0.48.0", "", { "dependencies": { "@html-eslint/types": "^0.48.0" } }, "sha512-hkyw2pguiXVvg4MuuRnwqFtgmwWUuOwkgnWaSMP37OJLzjsH5Qhhv3fBD1hc1sYgIuF8j+S8vDMV6FFX7WDVGg=="],
 
-    "@html-eslint/types": ["@html-eslint/types@0.47.0", "", { "dependencies": { "@types/estree": "^1.0.6", "es-html-parser": "0.3.0", "eslint": "^9.19.0" } }, "sha512-B9XpM+eA6eqMpPJX6CyqcoxJRmSiCcMQjPP7gvLgD4rsug/qh8t3XvYUPvjIfeSNFCJELbKqKC4GPvT9Q7fpNw=="],
+    "@html-eslint/types": ["@html-eslint/types@0.48.0", "", { "dependencies": { "@types/estree": "^1.0.6", "es-html-parser": "0.3.1", "eslint": "^9.19.0" } }, "sha512-jfUt1qGwGEsWuwYlg3TG0ZE6vm9rxRUuA+ke0p5lVaEEAe4UO57g9/lpo0+GB/57Qiai4Se3qZ02Pa/P4JrWuA=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 
@@ -571,6 +571,16 @@
 
     "@eslint/plugin-kit/@eslint/core": ["@eslint/core@0.15.2", "", { "dependencies": { "@types/json-schema": "^7.0.15" } }, "sha512-78Md3/Rrxh83gCxoUc0EiciuOHsIITzLy53m3d9UyiW8y9Dj2D29FeETqyKA+BRK76tnTp6RXWb3pCay8Oyomg=="],
 
+    "@html-eslint/eslint-plugin/@html-eslint/parser": ["@html-eslint/parser@0.48.0", "", { "dependencies": { "@html-eslint/template-syntax-parser": "^0.48.0", "@html-eslint/types": "^0.48.0", "es-html-parser": "0.3.1" } }, "sha512-IO8J3R1+0+QuYUNh0IT1C4KZIA0W8IbXS5/tvs0e+GvYjnTRJ0eNNJN5CwqRlLYLmsF0rDtrxBteBZXULfk7Zg=="],
+
+    "@html-eslint/parser/@html-eslint/template-syntax-parser": ["@html-eslint/template-syntax-parser@0.47.0", "", { "dependencies": { "@html-eslint/types": "^0.47.0" } }, "sha512-U7+baZDb3PmxAL8cyz3K/iTdCEabwEIcpuf6VbpIa9rie5bLwoNUX2h2bulLmjn9tE28Pul6t4QuM4Rv2Y5vDg=="],
+
+    "@html-eslint/parser/@html-eslint/types": ["@html-eslint/types@0.47.0", "", { "dependencies": { "@types/estree": "^1.0.6", "es-html-parser": "0.3.0", "eslint": "^9.19.0" } }, "sha512-B9XpM+eA6eqMpPJX6CyqcoxJRmSiCcMQjPP7gvLgD4rsug/qh8t3XvYUPvjIfeSNFCJELbKqKC4GPvT9Q7fpNw=="],
+
+    "@html-eslint/template-parser/es-html-parser": ["es-html-parser@0.3.1", "", {}, "sha512-YTEasG4xt7FEN4b6qJIPbFo/fzQ5kjRMEQ33QMqSXTvfXqAbC2rHxo32x2/1Rhq7Mlu6wI3MIpM5Kf2VHPXrUQ=="],
+
+    "@html-eslint/types/es-html-parser": ["es-html-parser@0.3.1", "", {}, "sha512-YTEasG4xt7FEN4b6qJIPbFo/fzQ5kjRMEQ33QMqSXTvfXqAbC2rHxo32x2/1Rhq7Mlu6wI3MIpM5Kf2VHPXrUQ=="],
+
     "csso/css-tree": ["css-tree@2.2.1", "", { "dependencies": { "mdn-data": "2.0.28", "source-map-js": "^1.0.1" } }, "sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA=="],
 
     "eslint/@eslint/plugin-kit": ["@eslint/plugin-kit@0.4.0", "", { "dependencies": { "@eslint/core": "^0.16.0", "levn": "^0.4.1" } }, "sha512-sB5uyeq+dwCWyPi31B2gQlVlo+j5brPlWx4yZBrEaRo/nhdDE8Xke1gsGgtiBdaBTxuTkceLVuVt/pclrasb0A=="],
@@ -578,6 +588,8 @@
     "svgo/commander": ["commander@11.1.0", "", {}, "sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ=="],
 
     "terser/commander": ["commander@2.20.3", "", {}, "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ=="],
+
+    "@html-eslint/eslint-plugin/@html-eslint/parser/es-html-parser": ["es-html-parser@0.3.1", "", {}, "sha512-YTEasG4xt7FEN4b6qJIPbFo/fzQ5kjRMEQ33QMqSXTvfXqAbC2rHxo32x2/1Rhq7Mlu6wI3MIpM5Kf2VHPXrUQ=="],
 
     "csso/css-tree/mdn-data": ["mdn-data@2.0.28", "", {}, "sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g=="],
   }
